@@ -1,0 +1,272 @@
+/* Import Momo Font */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Momo+Signature&family=Momo+Trust+Display&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Momo+Signature&display=swap"); */
+
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Reset the defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* New Body Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Creating a sticky header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+}
+
+.sticky {
+  background: #eeecebfd; /* Frothed milk color */
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header label {
+  color: #7b3306; /* Coffee-colored text  */
+  font-size: 20px; /* Larger font size */
+}
+
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/coffee-and-books-001.jpg);
+  background-size: cover;
+}
+
+.content {
+  max-width: 900px;
+  text-align: center;
+}
+
+.banner .content h1,
+h2 {
+  color: #fef3c6;
+  font-size: 4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.banner .content h2 {
+  color: #fee685;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.banner .content h3 {
+  color: white;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.banner .content h4 {
+  color: white;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 40px;
+}
+
+.banner .content p {
+  color: white;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.banner .content .btn {
+  background-color: #382716;
+  color: white;
+  font: 2.5em;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.05s;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+/* Hamburger Icon Styles */
+/* The fix: Our custom styles now override any conflicting styles from Font Awesome */
+.menu-toggle {
+  color: #7b3306; /* Coffee-colored icon */
+  font-size: 24px; /* Icon size */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: none; /* Hide by default (visible only on mobile) */
+}
+
+/* Navigation Menu Styles */
+.menu {
+  display: flex; /* Display menu items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Menu List Styles */
+.menu ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display list items inline */
+}
+
+/* Menu Item Styles */
+.menu li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+/* Menu Link Styles */
+.menu a {
+  color: #404040; /* Coffee-colored text */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Font size */
+}
+
+/* Hover Effect on Menu Links */
+.menu a:hover {
+  color: #7b3306; /* Coffee-color on hover */
+}
+
+/* Styles for the footer section */
+.footer {
+  /* display: flex;
+  justify-content: center; */
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  gap: 40px;
+}
+
+.footer h4,
+th {
+  color: #ffb900;
+}
+
+.footer ul {
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #7b3306;
+}
+
+.footer .icons {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.footer .icons a {
+  color: #fff;
+}
+
+.footer .icons a:hover {
+  color: #7b3306;
+}
+
+.footer .left-section {
+  text-align: left;
+}
+
+.footer .info-content {
+  text-align: left;
+  width: 30%;
+  /* border: 1px solid white; */
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.info-container p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  display: block;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  /* Show the hamburger icon */
+  .menu-toggle {
+    display: block; /* Show icon only in mobile view */
+  }
+
+  /* Hide the menu by default in mobile view */
+  .menu {
+    display: none; /* Hide menu */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position relative to navbar */
+    background-color: #eeeceb; /* Same background as the sticky header */
+    top: 60px; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    z-index: 1; /* Stay on top of other elements */
+    padding: 20px 0; /* Padding around menu items */
+  }
+
+  /* Show the menu when active */
+  .menu.active {
+    display: flex; /* Display menu */
+  }
+
+  /* Adjust the menu list for mobile */
+  .menu ul {
+    flex-direction: column; /* Stack list items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  /* Adjust menu items for mobile */
+  .menu li {
+    margin: 10px 0; /* Space between items */
+  }
+}

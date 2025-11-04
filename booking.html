@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookworms Anonymous - Bookings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index-styles.css" class="stylesheet" />
+  </head>
+  <body>
+    <!-- The body of the page where all the parts live -->
+    <header class="sticky">
+      <!-- Logo or Website Name -->
+      <label>Bookworms Anonymous</label>
+
+      <!-- Hamburger Icon for Mobile View -->
+      <!-- The 'menu-toggle' class is used to control the display of the icon -->
+      <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+      <!-- Navigation Menu -->
+      <navbar id="menu" class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+      </navbar>
+    </header>
+    <!-- JavaScript for Toggling the Menu -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
