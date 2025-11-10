@@ -1,0 +1,56 @@
+.tblEvents {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.thEventsDate {
+  color: darkred;
+  text-align: left;
+  font-weight: bolder;
+  width: 100px;
+}
+.thEvents {
+  color: darkred;
+  text-align: left;
+  font-weight: bolder;
+  width: 400px;
+}
+.thLocation {
+  color: darkred;
+  text-align: left;
+  text-align: unset;
+  font-weight: bolder;
+  width: 200px;
+}
+.thContact {
+  color: darkred;
+  text-align: left;
+  text-align: unset;
+  font-weight: bolder;
+  width: 200px;
+}
+.tdEvents {
+  word-wrap: break-word;
+}
+.btn {
+  background-color: #382716;
+  color: white;
+  font: 2.5em;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.05s;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.booking-header {
+  display: flex;
+  max-width: 85%;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
