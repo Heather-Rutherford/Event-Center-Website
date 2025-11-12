@@ -5,6 +5,13 @@
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
+  margin-bottom: 25px;
+  border-collapse: collapse;
+}
+.tblEvents th {
+  border-top: 1px solid #eca0a0;
+  border-bottom: 1px solid #eca0a0;
+  padding: 10px;
 }
 .thEventsDate {
   color: darkred;
@@ -31,6 +38,10 @@
   text-align: unset;
   font-weight: bolder;
   width: 200px;
+}
+.tblEvents td {
+  border-bottom: 1px solid #eca0a0;
+  padding: 10px;
 }
 .tdEvents {
   word-wrap: break-word;
