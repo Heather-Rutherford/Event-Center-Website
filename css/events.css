@@ -13,6 +13,11 @@
   border-bottom: 1px solid #eca0a0;
   padding: 10px;
 }
+.trBook-Event {
+  column-span: all;
+  border: 1px solid black;
+}
+
 .thEventsDate {
   color: darkred;
   text-align: left;
@@ -59,9 +64,13 @@
   margin-top: 20px;
   border-radius: 20px;
 }
-.booking-header {
-  display: flex;
-  max-width: 85%;
-  justify-content: flex-end;
-  margin-bottom: 20px;
+
+.tblEvents h2 {
+  color: darkred;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.tblEvents .heading {
+  vertical-align: bottom;
 }

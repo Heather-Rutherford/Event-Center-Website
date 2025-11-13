@@ -43,13 +43,33 @@
 
     <main class="main-container">
       <h2>Contact Us</h2>
-      <form action="post" class="contact-us">
+      <form action="#" class="contact-us">
         <label for="txtName" class="form-text">Name:</label>
-        <input type="text" id="txtName" name="txtName" /><br /><br />
+        <input
+          type="text"
+          id="txtName"
+          name="txtName"
+          placeholder="Type your first and last name."
+          required
+          minlength="2"
+        /><br /><br />
         <label for="txtEmail" class="form-text">Email:</label>
-        <input type="text" id="txtEmail" name="txtEmail" /><br /><br />
+        <input
+          type="text"
+          id="txtEmail"
+          name="txtEmail"
+          placeholder="Type your email address."
+          required
+        /><br /><br />
         <label for="txtMessage" class="form-text">Message:</label>
-        <textarea id="txtMessage" name="txtMessage"></textarea><br /><br />
+        <textarea
+          id="txtMessage"
+          name="txtMessage"
+          placeholder="Type your message."
+          required
+          minlenth="2"
+        ></textarea
+        ><br /><br />
         <input type="submit" value="Submit" />
       </form>
     </main>
@@ -58,7 +78,7 @@
     <footer class="footer">
       <div class="info-container">
         <div class="info-content">
-          <h4>Red Gables</h4>
+          <h4>Red Gables @ Wolf Branch</h4>
           <p>
             A vacation destination located on the Cumberland Plateau in
             Tennessee. Explore who we are and what we provide.
