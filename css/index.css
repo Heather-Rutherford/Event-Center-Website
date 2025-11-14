@@ -1,3 +1,10 @@
+body {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+/* styles for the hero section of the home page */
 .banner {
   width: 100%;
   min-height: 100vh;
@@ -5,59 +12,42 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/Red-Gables-At-Wolf-Branch-Doctored.jpg);
+    url(../images/Red-Gables-At-Wolf-Branch.jpg);
   background-size: cover;
 }
 
+/* Content section of the banner */
 .content {
   max-width: 900px;
-  text-align: center;
 }
 
-.banner .content h1,
-h2 {
-  color: white;
+/* Common styles for the headings in the content section */
+.banner .content h1 {
   font-size: 4em;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
+/* Specific styles for the h2 heading. */
 .banner .content h2 {
-  color: white;
   font-size: 3em;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
 .banner .content h3 {
-  color: white;
   font-size: 2em;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   margin-top: 20px;
+  font-weight: 400;
 }
 
 .banner .content h4 {
-  color: white;
   font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   margin-top: 40px;
-}
-
-.banner .content p {
-  color: white;
-  font-size: 2em;
-  margin-top: 20px;
+  font-weight: 400;
 }
 
 .banner .content .btn {
-  background-color: #382716;
   color: white;
+  background-color: rgb(5, 42, 5);
   font: 2.5em;
   padding: 10px 30px;
   text-decoration: none;

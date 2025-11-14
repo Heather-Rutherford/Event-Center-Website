@@ -1,23 +1,23 @@
 .main-container {
-  display: flex;
   flex-direction: column;
-  justify-content: first baseline;
-  align-items: center;
+  justify-content: flex-start;
+  align-self: center;
+  max-width: calc(95% - 20px);
 }
 
 .main-container .content {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  max-width: 95%;
-  margin-bottom: 20px;
+  max-width: calc(95% - 5px);
+  gap: 10px;
 }
 
 .main-container .content img {
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 20px;
+  padding: 0 5px;
 }
 
 .main-container .content span {
@@ -25,14 +25,18 @@
   font-size: 1em;
 }
 
-h2 {
-  color: darkred;
-  margin-bottom: 25px;
-  margin-top: 20px;
+.main-container .heading {
+  margin-top: 25px;
+  vertical-align: text-bottom;
 }
 
-p {
-  max-width: 65%;
-  margin-bottom: 20px;
+.main-container h2 {
+  color: darkred;
+}
+
+.main-container p {
+  max-width: calc(70%);
   font-size: 1.3em;
+  text-align: left;
+  margin-left: 10px;
 }

@@ -24,6 +24,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
 }
 
 /* Creating a sticky header */
@@ -39,21 +40,17 @@ header {
   padding: 40px 100px;
 }
 
+/* Creating a sticky header. */
 .sticky {
   background: #eeecebfd; /* Frothed milk color */
   padding: 10px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
+/* The label in the header: Red Gables @ Wolf Branch */
 header label {
   color: #7b3306; /* Coffee-colored text  */
   font-size: 20px; /* Larger font size */
-}
-
-/* Styles for the container with the articles section */
-.main-container {
-  flex: 1;
-  margin-top: 50px;
 }
 
 /* Hamburger Icon Styles */
@@ -96,13 +93,18 @@ header label {
   color: #7b3306; /* Coffee-color on hover */
 }
 
+.content {
+  max-width: 900px;
+  text-align: center;
+}
+
 /* Styles for the footer section */
 .footer {
   background-color: black;
   color: beige;
   width: 100%;
-  padding: 20px;
-  gap: 40px;
+  /* padding: 20px; */
+  gap: 0px;
 }
 
 .footer h4,
@@ -113,12 +115,12 @@ th {
 .footer ul {
   text-decoration: none;
   list-style: none;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 .footer ul li {
   display: inline;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .footer ul li a {
@@ -147,25 +149,48 @@ th {
   text-align: left;
 }
 
-.footer .info-content {
-  text-align: left;
-  width: 30%;
-  /* border: 1px solid white; */
+/* Styles for the content section of the page. */
+.main-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  margin-top: 50px;
+  gap: 0px;
+}
+
+.main-container p {
+  vertical-align: top;
 }
 
 .info-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 0px;
+  /* border: 2px solid white; */
 }
 
 .info-container p {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  vertical-align: top;
 }
 
+.footer .info-container .info-content {
+  /* display: flex; */
+  flex-wrap: wrap;
+  text-align: left;
+  width: 33%;
+  /* border: 1px solid white; */
+  margin: 5px 0 0 0;
+  padding: 0 0 0 5px;
+  gap: 0px;
+}
 .copyright {
+  margin: 10px 0;
+  padding: 0 10px;
   display: block;
 }
 
