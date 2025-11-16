@@ -1,12 +1,28 @@
+/* Styles specific to the Contact Us page */
 .main-container {
-  display: flex;
   justify-content: center;
 }
 
-body {
+/* Header styles */
+#header {
   display: flex;
+  max-width: 90%; /* Size the header to match the form size */
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+/* Heading text styles */
+#header h2 {
+  text-align: center;
+  color: darkred;
+  margin-bottom: 25px;
 }
 
+/* Header image styles */
+#header img {
+  width: 125px;
+}
+
+/* Contact form styles */
 form {
   background-color: #ffffff;
   padding: 30px;
@@ -16,23 +32,20 @@ form {
   max-width: 90%;
 }
 
-h2 {
-  text-align: center;
-  color: black;
-  margin-bottom: 25px;
-}
-
 .form-group {
   margin-bottom: 20px;
 }
 
+/* Label styles */
 label {
   display: block;
   margin-bottom: 8px;
-  color: #555555;
+  color: darkred;
   font-weight: bold;
+  text-align: left;
 }
 
+/* Input and textarea styles */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -45,15 +58,18 @@ textarea {
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
+/* Textarea specific styles */
 textarea {
   resize: vertical; /* Allow vertical resizing */
   min-height: 100px;
 }
 
+/* Submit button styles */
 input[type="submit"] {
   background-color: #382716;
-  color: white;
+  color: rgb(232, 230, 230);
   font: 2.5em;
+  font-weight: bolder;
   padding: 10px 30px;
   text-decoration: none;
   text-transform: uppercase;
@@ -65,5 +81,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #7b3306;
+  background-color: darkred;
 }

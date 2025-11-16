@@ -1,13 +1,27 @@
 🌐 My First Web Page
 🧭 Introduction
 
-This project satisfies the requirements for the Code The Landing Page Yourself in the HTML module. This project was created by Heather Rutherford and is part of a journey to refresh and enhance web development skills. The site includes the index.html page that represents the landing page and the styles.css page that provides the style for the index.html page.
+This project satisfies the requirements for the Event Center Website Activity in the HTML module. This project was created by Heather Rutherford and is part of a journey to refresh and enhance web development skills. This site includes the index.html page that represents the landing page, an about.html page that describes the "about" behind the website, the events.html page that displays events scheduled or has happened at the event center, a contact-us.html page that allows visitors to contact the owners/administrators of the event center, and the styles.css page that provides the style for the index.html page. Five stylesheets are included in the project - a common stylesheet that provides styling for the common elements that are seen on the various pages such as menus and footers. Each page also has it's own stylesheet that provides specific styling to that page.
 
-The project contains two main pages and a README file:
+The project contains four pages, five stylesheets and a README file:
 
-index.html – The main webpage. The page satifies the required part of the Code The Landing Page Yourself Activity.
+index.html - the homepage of the airbnb and event center site.
 
-styles.css - The style sheet that provides the styling for the index.html.
+about.html - provides "about us" information or the story behind the airbnb and event center.
+
+events.html - displays events that are scheduled or have occurred in the past.
+
+contact-us.html - allows visitors to the site to contact the owners/administrators of the airbnb and event center.
+
+common.css - The style sheet that provides the styling for the common elements shared between the different pages such as the menus and the footers.
+
+index.css - styles specific to the index.html page.
+
+about.css - styles specific to the about.html page.
+
+events.css - styles specific to the events.html page.
+
+contact-us.css - styles specific to the contact-us.html page
 
 README.md - This file contains a description of the project.
 
@@ -34,86 +48,58 @@ Author
 ✨ Introduction
 
 🎯 Goal
+By completing this project, you’ll demonstrate your mastery of HTML and CSS fundamentals while creating a realistic Event Center website that you can showcase in your portfolio! 🌟
 
-Create a personal portfolio landing page using HTML and CSS that introduces who you are and showcases your projects — just like a real developer’s website.
+🧱 Project Description
+In this project, you will design and build a multi-page Event Center website that showcases your event offerings, schedule, and venue details. This is your opportunity to bring a real-world scenario to life using everything you’ve learned so far—semantic HTML, layout design, forms, responsive styling, and interactivity.
 
-By completing this challenge, you’ll practice:
+Here’s the fun part: you get to choose the theme or type of event center! 🎉 Whether it’s a wedding venue, concert hall, conference center, or a festival arena, this is your chance to pick your favorite scenario and design a website that reflects that choice. Think of it as simulating a real event center—how would you present it online? What features and visuals would make it appealing to potential clients or visitors?
 
-Structuring a webpage with HTML
-Styling sections with CSS
-Organizing content using Flexbox
-Applying consistent spacing, colors, and layout
+This project is your moment to be creative and strategic:
+
+Organize pages logically (Home, About, Events, Booking, Contact, etc.)
+Highlight your offerings with interactive and engaging sections
+Use forms, schedules, and visuals to make your website functional and user-friendly
+Apply your own design style to create a polished, professional result
 
 🧱 Requirements
 
-Your page must include these 4 main sections:
+🏗️ HTML Structure
+Your website should include at least three pages, such as:
 
-🟤 1. Navigation Bar
+index.html — Home page (introduction to the event center and featured events)
+about.html — About the venue (history, mission, team)
+events.html — Event listings or schedule
+Each page should include:
 
-A top bar that includes at least four links, such as:
+Proper use of semantic HTML tags (header, nav, main, section, article, footer, etc.)
+A navigation menu linking all pages together
+Headings (h1–h6), paragraphs, and lists (ordered and unordered)
+At least one table (for example, an event schedule or ticket pricing table)
+Images with alt text in different formats (.jpg, .png, .gif)
+Links (internal, external, and anchor links)
+A contact form with text inputs, email input, textarea, and a submit button for inquiries or bookings
+A footer with social media links or copyright information
 
-Home
-About Me
-Projects
-Contact
-Use <nav>, <ul>, <li>, and <a> to structure it.
-Add hover effects to make links interactive.
+🎨 CSS Styling
+Use an external CSS file to style your website. Your CSS should include:
 
-🟤 2. Hero Section
+A consistent color scheme and typography appropriate for an event center
+Proper box model usage (padding, margin, border)
+Flexbox or CSS Grid for layout organization
+Hover and focus effects for interactive elements (buttons, links, images)
+Background images, gradients, or patterns
+At least one class selector and one ID selector
+Custom button styles for your form or links
+A responsive layout that adapts to mobile and desktop screens
 
-A welcome message introducing yourself.
-Include a short description (one or two sentences).
-Add an image or placeholder (e.g., 300x200) to make it visually appealing.
-Use background color to make this section stand out.
-
-🟤 3. Projects Section
-
-A section titled “My Projects.”
-Display at least three project cards, each with:
-An image
-A project title
-A short description
-Arrange the projects side by side using Flexbox.
-
-🟤 4. Footer
-
-A footer at the bottom that includes:
-Privacy Policy
-Terms of Use
-Contact Info
-
-🎨 Styling Guidelines
-
-Use Flexbox for alignment and spacing.
-Apply consistent colors, padding, and font sizes.
-Add hover effects for interactivity.
-Use at least one box-shadow or border-radius for design polish.
-
-💡 Bonus Ideas (Optional)
-
-Add a logo or your name to the nav bar.
-Use different background colors for each section.
-Include social media icons or links in the footer.
-Try to make it mobile responsive using media queries.
-
-🧩 Starter Hint
-
-Structure your HTML using this basic layout (you’ll fill in the details!):
-
-<nav></nav>
-<section class="hero"></section>
-<section class="projects"></section> -- I used the name "portfolio" instead of "projects"
-<footer></footer>
+✨ Bonus (Optional)
+Add CSS transitions or animations (for event cards or buttons)
+Include a favicon for your site
+Add a “Back to top” button
+Create a gallery section using CSS Grid for past events
 
 ✅ Submission Checklist
-
-Before submitting, make sure your landing page:
-
-Includes all 4 required sections
-Uses HTML and external CSS (separate files)
-Has at least 3 projects
-Looks clean and well-organized
-Opens correctly with Live Server
 
 ⚠️ Submit a single GitHub repository URL containing your solution.
 ✅ Example (Valid):

@@ -1,8 +1,9 @@
+/* Styles specific to the About page */
 .main-container {
   flex-direction: column;
   justify-content: flex-start;
   align-self: center;
-  max-width: calc(95% - 20px);
+  max-width: calc(95% - 20px); /* Adjusted for padding */
 }
 
 .main-container .content {
@@ -10,33 +11,38 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  max-width: calc(95% - 5px);
+  max-width: calc(95% - 5px); /* Adjusted for padding */
   gap: 10px;
 }
 
+/* Size the collage */
 .main-container .content img {
   max-width: 300px;
   border-radius: 20px;
   padding: 0 5px;
 }
-
+/* Color the Red Gables @ Wolf Branch phrase*/
 .main-container .content span {
   color: darkred;
   font-size: 1em;
 }
-
+/* Heading styles */
 .main-container .heading {
   margin-top: 25px;
   vertical-align: text-bottom;
+  margin-bottom: 15px;
 }
 
 .main-container h2 {
   color: darkred;
 }
 
+/* About us text */
+
 .main-container p {
   max-width: calc(70%);
   font-size: 1.3em;
   text-align: left;
   margin-left: 10px;
+  margin-bottom: 20px;
 }

@@ -1,7 +1,6 @@
+/* Additional style for the index.html page */
 body {
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
+  color: whitesmoke;
 }
 
 /* styles for the hero section of the home page */
@@ -33,18 +32,21 @@ body {
   font-weight: 400;
 }
 
+/* Specific styles for the h3 heading. */
 .banner .content h3 {
   font-size: 2em;
   margin-top: 20px;
   font-weight: 400;
 }
 
+/* Specific styles for the h4 heading. */
 .banner .content h4 {
   font-size: 1.5em;
   margin-top: 40px;
   font-weight: 400;
 }
 
+/* Styles for the button in the banner section */
 .banner .content .btn {
   color: white;
   background-color: rgb(5, 42, 5);
@@ -57,4 +59,10 @@ body {
   display: inline-block;
   margin-top: 20px;
   border-radius: 20px;
+}
+
+/* Hover effect for the button in the banner section */
+.banner .content .btn:hover {
+  background-color: rgb(13, 78, 13);
+  transform: scale(1.05);
 }

@@ -24,10 +24,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  font-style: normal;
+  background: linear-gradient(rgba(255, 254, 254, 0), rgba(253, 2, 2, 0.1));
 }
 
-/* Creating a sticky header */
+/* Creating a common header */
 header {
   position: fixed;
   top: 0;
@@ -42,15 +43,15 @@ header {
 
 /* Creating a sticky header. */
 .sticky {
-  background: #eeecebfd; /* Frothed milk color */
+  background: #eeecebfd;
   padding: 10px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* The label in the header: Red Gables @ Wolf Branch */
 header label {
-  color: #7b3306; /* Coffee-colored text  */
-  font-size: 20px; /* Larger font size */
+  color: #7b3306;
+  font-size: 20px;
 }
 
 /* Hamburger Icon Styles */
@@ -93,6 +94,7 @@ header label {
   color: #7b3306; /* Coffee-color on hover */
 }
 
+/* Content section */
 .content {
   max-width: 900px;
   text-align: center;
@@ -103,8 +105,6 @@ header label {
   background-color: black;
   color: beige;
   width: 100%;
-  /* padding: 20px; */
-  gap: 0px;
 }
 
 .footer h4,
@@ -112,15 +112,14 @@ th {
   color: tan;
 }
 
+/* The hours information */
 .footer ul {
   text-decoration: none;
   list-style: none;
-  /* padding-bottom: 15px; */
 }
 
 .footer ul li {
   display: inline;
-  /* margin-right: 10px; */
 }
 
 .footer ul li a {
@@ -132,6 +131,7 @@ th {
   color: steelblue;
 }
 
+/* Icons */
 .footer .icons {
   margin-top: 15px;
   color: beige;
@@ -145,8 +145,31 @@ th {
   color: steelblue;
 }
 
-.footer .left-section {
+/* Copyright info. */
+.copyright {
+  margin: 10px 0;
+  padding: 0 10px;
+  display: block;
+}
+
+/* Styles for the three columns of information displying in the footer. */
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.info-container p {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: top;
+}
+
+.info-content {
   text-align: left;
+  width: 33%;
+  padding: 5px 0 0 5px;
 }
 
 /* Styles for the content section of the page. */
@@ -164,34 +187,6 @@ th {
 
 .main-container p {
   vertical-align: top;
-}
-
-.info-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 0px;
-  /* border: 2px solid white; */
-}
-
-.info-container p {
-  vertical-align: top;
-}
-
-.footer .info-container .info-content {
-  /* display: flex; */
-  flex-wrap: wrap;
-  text-align: left;
-  width: 33%;
-  /* border: 1px solid white; */
-  margin: 5px 0 0 0;
-  padding: 0 0 0 5px;
-  gap: 0px;
-}
-.copyright {
-  margin: 10px 0;
-  padding: 0 10px;
-  display: block;
 }
 
 /* Media Query for Mobile View */
